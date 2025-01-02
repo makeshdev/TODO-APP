@@ -2,12 +2,12 @@
 
 ## Description
 
-This is a simple income expense calculator. Flip is a card memory game. Click the blue cards to see what symbol they uncover and try to find the matching symbol underneath the other cards. The game is won when all the cards are matched. Also, you can see the click counts and how many clicks you missed. And you can restart the game.
+This is an income expense calculator app. It allows you to calculate your monthly income and expenses. I have created this app with a mock API. So your all data is stored in the database. You can post, create, update, and delete your data. The filter option is also available at the top of the table section. You can see your income amount, expense amount and the balance amount. All data is stored on the database you can modify that.
 
 ## Technologies
 
-This small memory game was built with HTML, CSS, and JS.
+This TODO app was built with HTML, Tailwindcss, JS and mock API.
 
 ## Usage
 
-If you click the card, the card has a symbol you can remember. Then click the other card. If those cards have the same symbol it will be good and those cards are hidden. You can try another card. The game is won when all the cards are matched. 
+If you fill out the input field and click the add button. You can see your data in the table format. On that table, you can see two buttons edit and delete you can edit your data and delete your data. Also added a filter method where you can filter your income money and expense money and see your balance money.
