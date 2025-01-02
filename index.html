@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income Expense Calculator Task</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="w-full bg-blue-600 py-5">
+      <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center text-white">
+          Income Expense Calculator
+        </h1>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <div class="flex gap-14 mt-20 flex-col lg:flex-row p-5 lg:p-0">
+        <div class="w-full lg:w-1/4">
+          <h2 class="text-2xl font-semibold text-black mb-5">Add Expence</h2>
+          <form id="formbtn">
+            <div class="flex flex-col gap-3 mb-4">
+              <label for="title">Budget Title</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Enter Title"
+                required=""
+                class="placeholder-shown:border-gray-500 border p-2 w-full"
+              />
+            </div>
+            <div class="flex flex-col gap-3 mb-4">
+              <label for="Amount">Amount</label>
+              <input
+                type="number"
+                name="amount"
+                id="amount"
+                placeholder="Enter Amount"
+                class="placeholder-shown:border-gray-500 border p-2 w-full"
+                required=""
+              />
+            </div>
+            <div class="flex flex-col gap-3 mb-4">
+              <label for="Type">Entry Type</label>
+              <select
+                name="opt"
+                id="opt"
+                class="placeholder-shown:border-gray-500 border border-gray-500 p-2 w-full"
+              >
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+              </select>
+            </div>
+            <button
+              id="postBtn"
+              class="btn bg-blue-600 text-white py-3 w-full rounded-md border border-blue-600 hover:bg-transparent hover:text-blue-600"
+            >
+              Add
+            </button>
+          </form>
+        </div>
+        <div class="w-full lg:w-3/4">
+          <div
+            class="flex justify-between bg-blue-200 p-8 rounded-md mb-10 flex-col lg:flex-row"
+          >
+            <div class="text-blue-600 font-bold text-xl">
+              Total Income: <span id="income"></span>
+            </div>
+            <div class="text-blue-600 font-bold text-xl">
+              Total Expense: <span id="expense"></span>
+            </div>
+            <div class="text-blue-600 font-bold text-xl">
+              Net Balance: <span id="balance"></span>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-2xl font-semibold text-black mb-5">Expence List</h2>
+            <div class="flex gap-4 mb-6">
+              <label>
+                <input type="radio" name="filter" value="all" checked="" /> All
+              </label>
+              <label>
+                <input type="radio" name="filter" value="income" /> Income
+              </label>
+              <label>
+                <input type="radio" name="filter" value="expense" /> Expense
+              </label>
+            </div>
+            <table
+              class="w-full text-sm text-left rtl:text-right mb-6 table-fixed"
+            >
+              <thead class="text-lg text-gray-700 border-b-2 border-gray-300">
+                <tr>
+                  <th>Name</th>
+                  <th>Amount</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tableData"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
