@@ -2,11 +2,11 @@
 
 ## Description
 
-This is an income expense calculator app. It allows you to calculate your monthly income and expenses. I have created this app with a mock API. So your all data is stored in the database. You can post, create, update, and delete your data. The filter option is also available at the top of the table section. You can see your income amount, expense amount and the balance amount. All data is stored on the database you can modify that.
+This is an income expense calculator app. It allows you to calculate your monthly income and expenses. I have created this app with a HTML, Tailwindcss, JS. So your all data is stored in the Localstorage. You can post, create, update, and delete your data. The filter option is also available at the top of the table section. You can see your income amount, expense amount and the balance amount. All data is stored on the Localstorage you can modify that.
 
 ## Technologies
 
-This TODO app was built with HTML, Tailwindcss, JS and mock API.
+This TODO app was built with HTML, Tailwindcss, JS.
 
 ## Usage
 
