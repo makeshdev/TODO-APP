@@ -6,7 +6,7 @@
     <title>Income Expense Calculator Task</title>
     <link href="./src/output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="readAll()">
     <div class="w-full bg-blue-600 py-5">
       <div class="container mx-auto">
         <h1 class="text-3xl font-bold text-center text-white">
@@ -26,7 +26,6 @@
                 name="title"
                 id="title"
                 placeholder="Enter Title"
-                required=""
                 class="placeholder-shown:border-gray-500 border p-2 w-full"
               />
             </div>
@@ -38,7 +37,6 @@
                 id="amount"
                 placeholder="Enter Amount"
                 class="placeholder-shown:border-gray-500 border p-2 w-full"
-                required=""
               />
             </div>
             <div class="flex flex-col gap-3 mb-4">
